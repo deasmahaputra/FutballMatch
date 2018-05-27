@@ -1,9 +1,9 @@
-package deasmp.com.football_v2
+package deasmp.com.football_v2.model
 
 class FootballMatch{
 
 
-    var id : Int = 0
+    var idEvent : String? = null
     var strEvent : String? = null
     var dateEvent : String? = null
 

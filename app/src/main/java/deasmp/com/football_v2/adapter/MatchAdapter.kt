@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import deasmp.com.football_v2.DetailMatch
-import deasmp.com.football_v2.FootballMatch
 import deasmp.com.football_v2.R
+import deasmp.com.football_v2.model.FootballMatch
 
 class MatchAdapter(private val context : Context) : RecyclerView.Adapter<MatchAdapter.MatchViewHolder>(){
 
@@ -39,6 +39,7 @@ class MatchAdapter(private val context : Context) : RecyclerView.Adapter<MatchAd
             itemView.setOnClickListener(){
                 val context = itemView.context
                 val intent = Intent(context, DetailMatch::class.java)
+                intent.putExtra("idEvent", match.idEvent)
                 context.startActivity(intent)
             }
             matchscheduleTxt.text = match.dateEvent

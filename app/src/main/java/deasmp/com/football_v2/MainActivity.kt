@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.widget.Toast
 import deasmp.com.football_v2.adapter.MatchAdapter
-import deasmp.com.football_v2.model.Api
+import deasmp.com.football_v2.service.Api
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
